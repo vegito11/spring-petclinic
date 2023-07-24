@@ -13,8 +13,6 @@ services:
       - MYSQL_DATABASE=petclinic
     volumes:
       - "./conf.d:/etc/mysql/conf.d:ro"
-    profiles:
-    - mysql
   clinic:
     image: vegito/petclinic:main-1.0.0
     ports:
