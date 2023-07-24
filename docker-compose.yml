@@ -16,4 +16,4 @@ services:
   clinic:
     image: vegito/petclinic:main-1.0.0
     ports:
-      - "80:80"
+      - "8080:80"
