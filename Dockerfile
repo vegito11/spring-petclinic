@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./mvnw package
+RUN export MAVEN_OPTS="-Xmx3072m -XX:MaxPermSize=128m" && ./mvnw package
 
 ENTRYPOINT ["java", "-jar", "target/*.jar"]
 
